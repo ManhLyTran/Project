@@ -42,6 +42,20 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HVKTQS.Common\HVKTQS.Common.csproj">
+      <Project>{13d26a64-d7bc-402b-b346-c72d13a66d1b}</Project>
+      <Name>HVKTQS.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HVKTQS.Data\HVKTQS.Data.csproj">
+      <Project>{30aafa18-9490-4fff-b048-55889b5efb0e}</Project>
+      <Name>HVKTQS.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HVKTQS.Model\HVKTQS.Model.csproj">
+      <Project>{83f6131b-fa5a-41f2-9b5f-22ea7ba6dacc}</Project>
+      <Name>HVKTQS.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
