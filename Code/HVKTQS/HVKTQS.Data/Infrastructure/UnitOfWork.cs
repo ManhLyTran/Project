@@ -9,14 +9,14 @@ namespace HVKTQS.Data.Infrastructure
     public class UnitOfWork : IUnitOfWork
     {
         private readonly IDbFactory dbFactory;
-        private TeduShopDbContext dbContext;
+        private HVKTQSDbContext dbContext;
 
         public UnitOfWork(IDbFactory dbFactory)
         {
             this.dbFactory = dbFactory;
         }
 
-        public TeduShopDbContext DbContext
+        public HVKTQSDbContext DbContext
         {
             get { return dbContext ?? (dbContext = dbFactory.Init()); }
         }

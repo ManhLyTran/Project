@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace HVKTQS.Model
+namespace HVKTQS.Model.Models
 {
     [Table("EventNote")]
     public partial class EventNote : Auditable

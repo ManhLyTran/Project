@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace HVKTQS.Model
+namespace HVKTQS.Model.Models
 {
     [Table("EventUser")]
     public partial class EventUser

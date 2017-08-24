@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HVKTQS.Common
 {
-    class Class1
+    public class CommonConstants
     {
     }
 }

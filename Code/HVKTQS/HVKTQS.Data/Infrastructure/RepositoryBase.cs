@@ -12,7 +12,7 @@ namespace HVKTQS.Data.Infrastructure
     {
         #region Properties
 
-        private TeduShopDbContext dataContext;
+        private HVKTQSDbContext dataContext;
         private readonly IDbSet<T> dbSet;
 
         protected IDbFactory DbFactory
@@ -21,7 +21,7 @@ namespace HVKTQS.Data.Infrastructure
             private set;
         }
 
-        protected TeduShopDbContext DbContext
+        protected HVKTQSDbContext DbContext
         {
             get { return dataContext ?? (dataContext = DbFactory.Init()); }
         }

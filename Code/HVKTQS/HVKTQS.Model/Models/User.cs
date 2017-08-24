@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace HVKTQS.Model
+namespace HVKTQS.Model.Models
 {
     [Table("User")]
     public partial class User
@@ -24,8 +24,8 @@ namespace HVKTQS.Model
 
         public bool? IsLock { get; set; }
 
-        [ForeignKey("EmployeeID")]
-        public virtual Employee Employee { get; set; }
+        [ForeignKey("UserID")]
+        public virtual Employee Employees { get; set; }
 
         public virtual IEnumerable<EventUser> EventUsers { get; set; }
     }
