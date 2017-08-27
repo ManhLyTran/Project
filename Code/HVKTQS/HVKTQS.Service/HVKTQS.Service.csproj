@@ -40,6 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UserService.cs" />
+    <Compile Include="SubjectService.cs" />
+    <Compile Include="PositionService.cs" />
+    <Compile Include="EventUserService.cs" />
+    <Compile Include="EventService.cs" />
+    <Compile Include="EventNoteService.cs" />
+    <Compile Include="EventFileService.cs" />
+    <Compile Include="EmployeeService.cs" />
+    <Compile Include="DepartmentService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
