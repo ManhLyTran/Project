@@ -18,7 +18,8 @@ namespace HVKTQS.Data
         public DbSet<EventUser> EventUsers { set; get; }
         public DbSet<Position> Positions { set; get; }
         public DbSet<Subject> Subjects { set; get; }
-        public DbSet<User> User { set; get; }
+        public DbSet<User> Users { set; get; }
+        public DbSet<Error> Errors { set; get; }
 
         public static HVKTQSDbContext Create()
         {
