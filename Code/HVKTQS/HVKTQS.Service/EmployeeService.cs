@@ -21,7 +21,7 @@ namespace HVKTQS.Service
         void Save();
     }
 
-    internal class EmployeeService : IEmployeeService
+    public class EmployeeService : IEmployeeService
     {
         private IEmployeeRepository _EmployeeRepository;
         private IUnitOfWork _unitOfWork;

@@ -21,7 +21,7 @@ namespace HVKTQS.Service
         void Save();
     }
 
-    internal class PositionService : IPositionService
+    public class PositionService : IPositionService
     {
         private IPositionRepository _PositionRepository;
         private IUnitOfWork _unitOfWork;

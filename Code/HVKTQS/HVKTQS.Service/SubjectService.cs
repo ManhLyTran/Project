@@ -21,7 +21,7 @@ namespace HVKTQS.Service
         void Save();
     }
 
-    internal class SubjectService : ISubjectService
+    public class SubjectService : ISubjectService
     {
         private ISubjectRepository _SubjectRepository;
         private IUnitOfWork _unitOfWork;

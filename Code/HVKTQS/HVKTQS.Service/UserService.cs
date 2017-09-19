@@ -21,7 +21,7 @@ namespace HVKTQS.Service
         void Save();
     }
 
-    internal class UserService : IUserService
+    public class UserService : IUserService
     {
         private IUserRepository _UserRepository;
         private IUnitOfWork _unitOfWork;

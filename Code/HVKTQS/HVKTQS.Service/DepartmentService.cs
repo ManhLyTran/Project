@@ -21,7 +21,7 @@ namespace HVKTQS.Service
         void Save();
     }
 
-    internal class DepartmentService : IDepartmentService
+    public class DepartmentService : IDepartmentService
     {
         private IDepartmentRepository _DepartmentRepository;
         private IUnitOfWork _unitOfWork;

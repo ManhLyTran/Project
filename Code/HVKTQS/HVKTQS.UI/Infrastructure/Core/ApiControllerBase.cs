@@ -8,7 +8,7 @@ using System.Web.Http;
 using HVKTQS.Model.Models;
 using HVKTQS.Service;
 
-namespace HVKTQS.Web.Infrastructure.Core
+namespace HVKTQS.UI.Infrastructure.Core
 {
     public class ApiControllerBase : ApiController
     {

@@ -21,7 +21,7 @@ namespace HVKTQS.Service
         void Save();
     }
 
-    internal class EventUserService : IEventUserService
+    public class EventUserService : IEventUserService
     {
         private IEventUserRepository _EventUserRepository;
         private IUnitOfWork _unitOfWork;
