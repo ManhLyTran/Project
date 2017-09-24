@@ -1,6 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-using Microsoft.Owin;
+﻿using Microsoft.Owin;
 using Owin;
 using Autofac;
 using System.Reflection;
@@ -12,6 +10,11 @@ using System.Web.Http;
 using Autofac.Integration.Mvc;
 using Autofac.Integration.WebApi;
 using HVKTQS.Data;
+using HVKTQS.UI.App_Start;
+using System.Web;
+using Microsoft.Owin.Security.DataProtection;
+using HVKTQS.Model.Models;
+using Microsoft.AspNet.Identity;
 
 [assembly: OwinStartup(typeof(HVKTQS.Web.App_Start.Startup))]
 
@@ -22,7 +25,7 @@ namespace HVKTQS.Web.App_Start
         public void Configuration(IAppBuilder app)
         {
             ConfigAutofac(app);
-            //ConfigureAuth(app);
+            ConfigureAuth(app);
         }
 
         private void ConfigAutofac(IAppBuilder app)
@@ -38,11 +41,11 @@ namespace HVKTQS.Web.App_Start
             builder.RegisterType<HVKTQSDbContext>().AsSelf().InstancePerRequest();
 
             //Asp.net Identity
-            //builder.RegisterType<ApplicationUserStore>().As<IUserStore<ApplicationUser>>().InstancePerRequest();
-            //builder.RegisterType<ApplicationUserManager>().AsSelf().InstancePerRequest();
-            //builder.RegisterType<ApplicationSignInManager>().AsSelf().InstancePerRequest();
-            //builder.Register(c => HttpContext.Current.GetOwinContext().Authentication).InstancePerRequest();
-            //builder.Register(c => app.GetDataProtectionProvider()).InstancePerRequest();
+            builder.RegisterType<ApplicationUserStore>().As<IUserStore<ApplicationUser>>().InstancePerRequest();
+            builder.RegisterType<ApplicationUserManager>().AsSelf().InstancePerRequest();
+            builder.RegisterType<ApplicationSignInManager>().AsSelf().InstancePerRequest();
+            builder.Register(c => HttpContext.Current.GetOwinContext().Authentication).InstancePerRequest();
+            builder.Register(c => app.GetDataProtectionProvider()).InstancePerRequest();
 
             // Repositories
             builder.RegisterAssemblyTypes(typeof(DepartmentRepository).Assembly)

@@ -39,7 +39,6 @@ namespace HVKTQS.Model.Models
         [ForeignKey("SubjectID")]
         public virtual Subject Subjects { get; set; }
 
-        [ForeignKey("EmployeeID")]
-        public virtual User Users { get; set; }
+        public virtual ApplicationUser Users { get; set; }
     }
 }

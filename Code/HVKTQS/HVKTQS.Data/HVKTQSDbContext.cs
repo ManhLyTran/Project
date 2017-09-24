@@ -1,9 +1,10 @@
 ﻿using HVKTQS.Model.Models;
+using Microsoft.AspNet.Identity.EntityFramework;
 using System.Data.Entity;
 
 namespace HVKTQS.Data
 {
-    public class HVKTQSDbContext : DbContext
+    public class HVKTQSDbContext : IdentityDbContext<ApplicationUser>
     {
         public HVKTQSDbContext() : base("HVKTQSConnection")
         {
@@ -18,8 +19,9 @@ namespace HVKTQS.Data
         public DbSet<EventUser> EventUsers { set; get; }
         public DbSet<Position> Positions { set; get; }
         public DbSet<Subject> Subjects { set; get; }
-        public DbSet<User> Users { set; get; }
+
         public DbSet<Error> Errors { set; get; }
+        //public DbSet<ApplicationUser> ApplicationUser { set; get; }
 
         public static HVKTQSDbContext Create()
         {
@@ -28,9 +30,10 @@ namespace HVKTQS.Data
 
         protected override void OnModelCreating(DbModelBuilder builder)
         {
-            builder.Entity<User>()
-              .HasOptional(e => e.Employees)
-              .WithRequired(e => e.Users);
+            builder.Entity<IdentityUserRole>().HasKey(i => new { i.UserId, i.RoleId }).ToTable("ApplicationUserRoles");
+            builder.Entity<IdentityUserLogin>().HasKey(i => i.UserId).ToTable("ApplicationUserLogins");
+            builder.Entity<IdentityRole>().ToTable("ApplicationRoles");
+            builder.Entity<IdentityUserClaim>().HasKey(i => i.UserId).ToTable("ApplicationUserClaims");
         }
     }
 }

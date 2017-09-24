@@ -8,15 +8,15 @@ namespace HVKTQS.Service
 {
     public interface IUserService
     {
-        User Add(User User);
+        ApplicationUser Add(ApplicationUser User);
 
-        void Update(User User);
+        void Update(ApplicationUser User);
 
-        User Delete(int id);
+        ApplicationUser Delete(int id);
 
-        IEnumerable<User> GetAll();
+        IEnumerable<ApplicationUser> GetAll();
 
-        User GetById(int id);
+        ApplicationUser GetById(int id);
 
         void Save();
     }
@@ -32,22 +32,22 @@ namespace HVKTQS.Service
             this._unitOfWork = unitOfWork;
         }
 
-        public User Add(User User)
+        public ApplicationUser Add(ApplicationUser User)
         {
             return _UserRepository.Add(User);
         }
 
-        public User Delete(int id)
+        public ApplicationUser Delete(int id)
         {
             return _UserRepository.Delete(id);
         }
 
-        public IEnumerable<User> GetAll()
+        public IEnumerable<ApplicationUser> GetAll()
         {
             return _UserRepository.GetAll();
         }
 
-        public User GetById(int id)
+        public ApplicationUser GetById(int id)
         {
             return _UserRepository.GetSingleById(id);
         }
@@ -57,7 +57,7 @@ namespace HVKTQS.Service
             _unitOfWork.Commit();
         }
 
-        public void Update(User User)
+        public void Update(ApplicationUser User)
         {
             _UserRepository.Update(User);
         }

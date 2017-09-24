@@ -3,11 +3,11 @@ using HVKTQS.Model.Models;
 
 namespace HVKTQS.Data.Repositories
 {
-    public interface IUserRepository : IRepository<User>
+    public interface IUserRepository : IRepository<ApplicationUser>
     {
     }
 
-    public class UserRepository : RepositoryBase<User>, IUserRepository
+    public class UserRepository : RepositoryBase<ApplicationUser>, IUserRepository
     {
         public UserRepository(IDbFactory dbFactory) : base(dbFactory)
         {

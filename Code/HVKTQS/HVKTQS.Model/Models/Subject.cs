@@ -24,7 +24,7 @@ namespace HVKTQS.Model.Models
         [ForeignKey("DepartmentID")]
         public virtual Department Department { set; get; }
 
-        public virtual IEnumerable<User> Users { set; get; }
+        public virtual IEnumerable<ApplicationUser> Users { set; get; }
 
         public virtual IEnumerable<Event> Events { set; get; }
     }

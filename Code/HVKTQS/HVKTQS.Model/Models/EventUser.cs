@@ -31,7 +31,6 @@ namespace HVKTQS.Model.Models
         [ForeignKey("EventID")]
         public virtual Event Event { get; set; }
 
-        [ForeignKey("UserID")]
-        public virtual User User { get; set; }
+        public virtual ApplicationUser User { get; set; }
     }
 }

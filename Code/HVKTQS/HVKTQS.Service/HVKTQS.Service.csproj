@@ -41,7 +41,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ErrorService.cs" />
-    <Compile Include="UserService.cs" />
     <Compile Include="SubjectService.cs" />
     <Compile Include="PositionService.cs" />
     <Compile Include="EventUserService.cs" />
