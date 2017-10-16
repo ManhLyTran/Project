@@ -1,0 +1,1 @@
+﻿<%@ WebHandler Language="C#" CodeBehind="SubjectHandler.ashx.cs" Class="HVKTQS.Web.List.Handler.SubjectHandler" %>
