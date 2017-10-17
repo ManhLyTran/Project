@@ -40,8 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GeneralEvent_BAL.cs" />
     <Compile Include="Employee_BAL.cs" />
     <Compile Include="Department_BAL.cs" />
+    <Compile Include="EventFile_BAL.cs" />
     <Compile Include="Position_BAL.cs" />
     <Compile Include="Subject_BAL.cs" />
     <Compile Include="User_BAL.cs" />

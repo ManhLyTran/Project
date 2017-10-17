@@ -22,210 +22,264 @@ namespace HVKTQS.Web.Calendar {
         protected global::System.Web.UI.WebControls.Label lblTitle;
         
         /// <summary>
-        /// ddlDepartment control.
+        /// lblSubject control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlDepartment;
+        protected global::System.Web.UI.WebControls.Label lblSubject;
         
         /// <summary>
-        /// ddlSubject control.
+        /// ddlDepartment_G control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlSubject;
+        protected global::System.Web.UI.WebControls.DropDownList ddlDepartment_G;
         
         /// <summary>
-        /// CheckBox3 control.
+        /// ddlSubject_G control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox3;
+        protected global::System.Web.UI.WebControls.DropDownList ddlSubject_G;
         
         /// <summary>
-        /// CheckBox4 control.
+        /// chkIsImportant_G control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox4;
+        protected global::System.Web.UI.WebControls.CheckBox chkIsImportant_G;
         
         /// <summary>
-        /// txtTitle control.
+        /// chkIsDone_G control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTitle;
+        protected global::System.Web.UI.WebControls.CheckBox chkIsDone_G;
         
         /// <summary>
-        /// txtStartDate control.
+        /// txtTitle_G control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtStartDate;
+        protected global::System.Web.UI.WebControls.TextBox txtTitle_G;
         
         /// <summary>
-        /// chkAllDay control.
+        /// txtStartDate_G control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkAllDay;
+        protected global::System.Web.UI.WebControls.TextBox txtStartDate_G;
         
         /// <summary>
-        /// chkNotEndDate control.
+        /// chkAllDay_G control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkNotEndDate;
+        protected global::System.Web.UI.WebControls.CheckBox chkAllDay_G;
         
         /// <summary>
-        /// txtTimeStart control.
+        /// chkNotEndDate_G control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTimeStart;
+        protected global::System.Web.UI.WebControls.CheckBox chkNotEndDate_G;
         
         /// <summary>
-        /// txtTimeEnd control.
+        /// txtTimeStart_G control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTimeEnd;
+        protected global::System.Web.UI.WebControls.TextBox txtTimeStart_G;
         
         /// <summary>
-        /// txtDescription control.
+        /// txtTimeEnd_G control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDescription;
+        protected global::System.Web.UI.WebControls.TextBox txtTimeEnd_G;
         
         /// <summary>
-        /// txtLocation control.
+        /// txtDescription_G control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtLocation;
+        protected global::System.Web.UI.WebControls.TextBox txtDescription_G;
         
         /// <summary>
-        /// TextBox1 control.
+        /// txtLocation_G control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox txtLocation_G;
         
         /// <summary>
-        /// TextBox2 control.
+        /// txtOrganizer_G control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox txtOrganizer_G;
         
         /// <summary>
-        /// txtPreparation control.
+        /// txtParticipant_G control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPreparation;
+        protected global::System.Web.UI.WebControls.TextBox txtParticipant_G;
         
         /// <summary>
-        /// rdoRecurrenceNone control.
+        /// txtPreparation_G control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rdoRecurrenceNone;
+        protected global::System.Web.UI.WebControls.TextBox txtPreparation_G;
         
         /// <summary>
-        /// rdoRecurrencePeriodic control.
+        /// fileAttachments control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rdoRecurrencePeriodic;
+        protected global::System.Web.UI.WebControls.FileUpload fileAttachments;
         
         /// <summary>
-        /// txtPeriodicAmount control.
+        /// divRecurrence control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPeriodicAmount;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divRecurrence;
         
         /// <summary>
-        /// ddlPeriodicCode control.
+        /// rdoRecurrenceNone_G control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlPeriodicCode;
+        protected global::System.Web.UI.WebControls.RadioButton rdoRecurrenceNone_G;
         
         /// <summary>
-        /// rdoRecurrenceMonthlyActual control.
+        /// rdoRecurrencePeriodic_G control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rdoRecurrenceMonthlyActual;
+        protected global::System.Web.UI.WebControls.RadioButton rdoRecurrencePeriodic_G;
         
         /// <summary>
-        /// ddlActualMonthlyDay control.
+        /// txtPeriodicAmount_G control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlActualMonthlyDay;
+        protected global::System.Web.UI.WebControls.TextBox txtPeriodicAmount_G;
         
         /// <summary>
-        /// txtRecurrenceStartDate control.
+        /// ddlPeriodicCode_G control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtRecurrenceStartDate;
+        protected global::System.Web.UI.WebControls.DropDownList ddlPeriodicCode_G;
         
         /// <summary>
-        /// txtRecurrenceEndDate control.
+        /// rdoRecurrenceMonthlyActual_G control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtRecurrenceEndDate;
+        protected global::System.Web.UI.WebControls.RadioButton rdoRecurrenceMonthlyActual_G;
+        
+        /// <summary>
+        /// ddlActualMonthlyDay_G control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlActualMonthlyDay_G;
+        
+        /// <summary>
+        /// txtRecurrenceStartDate_G control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtRecurrenceStartDate_G;
+        
+        /// <summary>
+        /// txtRecurrenceEndDate_G control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtRecurrenceEndDate_G;
+        
+        /// <summary>
+        /// litModify control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal litModify;
+        
+        /// <summary>
+        /// btnCancel_G control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnCancel_G;
+        
+        /// <summary>
+        /// btnSave_G control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSave_G;
     }
 }

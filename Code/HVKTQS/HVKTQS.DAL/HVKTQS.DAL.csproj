@@ -41,8 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GeneralEvent_DAL.cs" />
     <Compile Include="Employee_DAL.cs" />
     <Compile Include="Department_DAL.cs" />
+    <Compile Include="EventFile_DAL.cs" />
     <Compile Include="Position_DAL.cs" />
     <Compile Include="Subject_DAL.cs" />
     <Compile Include="User_DAL.cs" />
